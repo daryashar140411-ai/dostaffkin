@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Отследить посылку — Dostaffkin</title>
+<link rel="stylesheet" href="styles/base.css"><link rel="stylesheet" href="styles/base_adaptive.css"><link rel="stylesheet" href="styles/track.css"><link rel="stylesheet" href="styles/track_adaptive.css"></head>
+<body class="tracking-page">
+<header class="header"><a class="header-brand" href="index.html"><span class="header-logo">D</span><span class="header-title">Dostaffkin</span></a><nav class="header-menu"><a class="header-link" href="order.html">Оформить доставку</a><a class="header-link" href="track.html">Отследить посылку</a></nav></header>
+<main class="tracking-main">
+<section class="tracking-card search-card"><h1>Отследить посылку</h1><div class="search-body"><input id="trackNumber" placeholder="Введите номер посылки" aria-label="Номер посылки" autocomplete="off"><button id="trackButton" type="button">Отследить</button></div></section>
+<section class="tracking-card result-card" id="trackResult" hidden>
+<div class="result-top"><h2 id="trackIdValue"></h2><div class="route-line"><span class="marker orange">⌖</span><span id="trackFromValue"></span></div><div class="down-arrow">↓</div><div class="route-line"><span class="marker green">⌖</span><span id="trackToValue"></span></div></div>
+<div class="status-area"><b>Статус данной посылки:</b><div class="track-status-list" id="trackStatusList"></div></div>
+</section></main>
+<script src="scripts/track.js"></script></body></html>

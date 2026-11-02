@@ -1,0 +1,201 @@
+/* Стили главной страницы Dostaffkin */
+.container {
+    overflow: hidden;
+    min-height: 100vh;
+    position: relative;
+}
+
+.header {
+    border-radius: 18px;
+    box-shadow: 0 7px 20px 0 #00000020;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.96);
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    position: fixed;
+    padding: 10px 14px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    z-index: 6;
+}
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    flex-shrink: 0;
+}
+
+.header-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #050505;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+.header-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111111;
+}
+
+.header-menu {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-link {
+    font-size: 14px;
+    color: #111111;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.header-link:hover {
+    color: #c58b00;
+}
+
+.main {
+    padding: 111px 40px 40px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+}
+
+.main-info {
+    max-width: 840px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.main-title {
+    margin: 42px 0 0;
+    font-weight: 700;
+    font-size: clamp(100px, 14vw, 200px);
+    line-height: 1;
+    letter-spacing: -0.065em;
+    color: #080808;
+    left: -8px;
+    position: relative;
+    white-space: nowrap;
+}
+
+.main-title span {
+    color: #080808;
+}
+
+.main-features {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-width: 760px;
+}
+
+.main-feature {
+    background: #080808;
+    color: #ffffff;
+    padding: 10px 13px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.1;
+    border-radius: 9px;
+    border: 1px solid #ffffff;
+    outline: 1px solid #080808;
+}
+
+.main-description {
+    margin-top: 40px;
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 1.15;
+    color: #111111;
+}
+
+.main-actions {
+    margin-top: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: 433px;
+}
+
+.button {
+    border: 1px solid #111111;
+    outline: none;
+    min-height: 60px;
+    border-radius: 9px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: inherit;
+    transition: background-color .15s ease, transform .15s ease;
+    background: #050505;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    display: grid;
+    place-items: center;
+    padding: 12px 18px;
+}
+
+.button:hover {
+    background-color: #292929;
+    transform: translateY(-1px);
+}
+
+.button.button-white {
+    background: #ffffff;
+    color: #111111;
+    border: 1px solid #111111;
+}
+
+.button.button-white:hover {
+    background: #f1f1f1;
+}
+
+.main-title-ghost {
+    position: absolute;
+    z-index: 0;
+    left: -35px;
+    bottom: -105px;
+    font-weight: 700;
+    font-size: clamp(120px, 20vw, 278px);
+    line-height: 1;
+    letter-spacing: -0.06em;
+    color: #ecedf04d;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.main-image {
+    width: min(56vw, 780px);
+    position: absolute;
+    right: 0;
+    top: 82px;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    mix-blend-mode: multiply;
+}

@@ -1,0 +1,42 @@
+body.tracking-page{margin:0;min-height:100vh;background:#faf7ef url("../images/tracking-background.jpg") center center/cover fixed no-repeat;font-family:Roboto,Arial,sans-serif}
+.tracking-page .header{position:fixed;z-index:5;left:20px;right:20px;top:16px;height:54px;border-radius:15px;background:#ffffffed;box-shadow:0 5px 18px #0002;padding:7px 14px;display:flex;align-items:center}
+.tracking-page .header-brand{display:flex;align-items:center;gap:9px;text-decoration:none;color:#111}
+.tracking-page .header-logo{width:34px;height:34px;border-radius:9px;background:#ffcc00;color:#111;display:grid;place-items:center;font-weight:bold}
+.tracking-page .header-title{font-size:16px;font-weight:bold}
+.tracking-page .header-menu{position:absolute;left:50%;transform:translateX(-50%);display:flex;gap:48px}
+.tracking-page .header-link{font-size:12px;text-decoration:none;color:#111;white-space:nowrap}
+.tracking-main{width:min(510px,calc(100% - 32px));margin:145px auto 40px;display:flex;flex-direction:column;gap:5px}
+.tracking-card{border-radius:17px;background:#ffffffed;box-shadow:0 7px 24px #0002;border:1px solid #0000000b;overflow:hidden}
+.search-card h1{font-size:16px;margin:0;padding:18px;border-bottom:1px solid #eee}
+.search-body{padding:17px}
+.search-body input{width:100%;height:43px;box-sizing:border-box;border:1px solid #e5e5e5;border-radius:9px;background:#fafafa;padding:0 10px;font:11px Roboto,Arial;outline:0;margin-bottom:9px}
+.search-body button{width:100%;height:43px;border:0;border-radius:9px;background:#ffca00;font-size:11px;font-weight:bold;cursor:pointer}
+.result-card[hidden]{display:none}
+.result-top{padding:18px;border-bottom:1px solid #eee}
+.result-top h2{font-size:16px;margin:0 0 10px}
+.route-line{display:flex;align-items:center;gap:10px;font-size:11px}
+.marker{font-size:21px;line-height:1}
+.marker.orange{color:#f2a000}.marker.green{color:#169b36}
+.down-arrow{font-size:22px;margin:4px 0 4px 2px;line-height:1}
+.status-area{padding:17px}
+.status-area>b{font-size:11px;display:block;margin-bottom:16px}
+.status-row{display:flex;align-items:center;gap:10px;margin:12px 0;font-size:11px}
+.status-row time{margin-left:auto;color:#999;font-size:10px}
+.status-icon{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;color:white;font-size:20px}
+.status-icon.yellow{background:#f2c900}.status-icon.orange{background:#f28c00}.status-icon.brown{background:#a85e00}.status-icon.green{background:#32c63d}
+
+[hidden]{display:none!important}
+.track-status-list{display:flex;flex-direction:column;gap:15px;margin-top:18px}
+.track-status{display:flex;align-items:center;gap:12px}
+.track-status time{margin-left:auto;color:rgba(17,17,17,.55);font-size:12px}
+.track-status .status-icon{display:grid;place-items:center;flex:0 0 40px;height:40px;border-radius:50%;font-weight:bold}
+.track-status.created .status-icon{background:#f1cb00}
+.track-status.in-way .status-icon{background:#f08a11}
+.track-status.ready .status-icon{background:#a35d0a;color:#fff}
+.track-status.done .status-icon{background:#37c93b}
+
+/* Стили элементов ленты статусов из заметок урока 4 */
+.track-status-icon{width:40px;height:40px;flex:0 0 40px;object-fit:contain}
+.track-status-text{display:flex;flex-direction:column;gap:4px;min-width:0}
+.track-status-text-state{font-size:12px;font-weight:600;color:#222}
+.track-status-text-date{font-size:11px;color:#888}
